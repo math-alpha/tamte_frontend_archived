@@ -1,7 +1,8 @@
 <template>
   <div>
-    <static-header></static-header>
+    <DashboardHeader></DashboardHeader>
     <v-main>
+      <h1 style="text-align: center">Leaderboard</h1>
       <v-container
         style="width: 40%; height: 80vh; margin: auto; overflow: scroll; overflow-x: hidden;"
       >
@@ -233,12 +234,12 @@
 </template>
 
 <script>
-import StaticHeader from '@/components/static/StaticHeader'
+import DashboardHeader from '@/components/DashboardHeader'
 
 export default {
   name: 'Leaderboard',
   components: {
-    StaticHeader
+    DashboardHeader
   }
 }
 </script>

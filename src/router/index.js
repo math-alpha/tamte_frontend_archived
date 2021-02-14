@@ -21,6 +21,7 @@ import VerifyWord from '@/components/VerifyWord'
 import VerifyName from '@/components/VerifyName'
 import VerifySound from '@/components/VerifySound'
 import VerifyTranslation from '@/components/VerifyTranslation'
+import Verifying from '@/views/Verifying'
 
 Vue.use(VueRouter)
 
@@ -126,7 +127,7 @@ const routes = [
   },
   {
     path: '/verify',
-    component: Editing,
+    component: Verifying,
     children: [
       {
         // Default route

@@ -92,14 +92,16 @@
 
                     <v-btn
                       :disabled="!valid"
-                      color="success"
+                      color="#191970"
                       class="mr-2"
                       @click="validate"
+                      style="color: white"
                     >
                       Validate
                     </v-btn>
 
                     <v-btn
+                      v-if=false
                       color="error"
                       @click="reset"
                       class="mr-2"
@@ -108,6 +110,7 @@
                     </v-btn>
 
                     <v-btn
+                      v-if=false
                       color="warning"
                       @click="resetValidation"
                       class="mr-2"

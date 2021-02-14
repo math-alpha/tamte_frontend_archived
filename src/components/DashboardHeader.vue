@@ -8,25 +8,14 @@
 
     <v-spacer style="color: darkgrey"></v-spacer>
 
-    <v-btn
-      text
-    >
-      About
-    </v-btn>
-
-    <v-btn
-      text
-    >
-      How It Works
-    </v-btn>
-
-    <v-btn
-      text
-    >
-      Community
-    </v-btn>
-
     <v-spacer></v-spacer>
+
+    <v-icon
+      style="margin-right: 30px"
+      large
+    >
+      mdi-home
+    </v-icon>
 
     <v-btn
       v-if=!this.loggedIn
@@ -50,7 +39,7 @@
 
 <script>
 export default {
-  name: 'StaticHeader',
+  name: 'DashboardHeader',
   date () {
     return {
       loggedIn: false
